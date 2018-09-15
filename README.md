@@ -11,7 +11,7 @@ PHP
 PHP CUrl
 </li>
 </ul>
-# OS
+<h1> OS </h1>
 <ul><li>
 Linux
 </li></ul>
@@ -20,7 +20,7 @@ Linux
 <img src="Files/screenShots/Header.png">
 <img src="Files/screenShots/help_map.png">
 <img src="Files/screenShots/usage.png">
-# License
+<h1> License</h1>
 <b>DWTFPL<br>
 <img src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-2.png">
 
