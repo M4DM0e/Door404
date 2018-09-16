@@ -30,7 +30,7 @@ echo "		-SC  : Server Controller  \n";
 echo "		-SCA  : Server Controller Advanced  \n";
 echo "		-JB  : Jail break  \n";
 echo "		-proxy  : use proxy list with connection  \n";
-echo "  EXAMPLE:[php $ScriptName -s -proxy proxyList.txt]\n";
+echo "  EXAMPLE:[php $ScriptName -JB -proxy proxyList.txt]\n";
 exit();
 }
 if(isset($argv[2])){
