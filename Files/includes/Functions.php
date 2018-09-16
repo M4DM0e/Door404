@@ -200,10 +200,10 @@ if($pType == "SC"){
 cEcho("\n  [~] There is nothing here \n","\e[97m");
 }elseif($pType == "SCA"){
 cEcho("\n  COMMANDS : \n","\e[97m");
-cEcho("   cPath : change your current path\n","\e[97m");
+cEcho("   chPath : change your current path\n","\e[97m");
 }elseif($pType == "JB"){
 cEcho("\n  COMMANDS : \n","\e[97m");
-cEcho("   cPath : change your current path\n","\e[97m");
+cEcho("   chPath : change your current path\n","\e[97m");
 cEcho("   bypass : bypass disabled functions\n","\e[97m");
 
 }
