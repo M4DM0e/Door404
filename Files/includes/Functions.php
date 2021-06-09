@@ -1,6 +1,6 @@
 <?php
 function _version(){
-$GitHub = "https://raw.githubusercontent.com/MrSqar-Ye/Door404/master/Files/includes/version.txt";
+$GitHub = "https://raw.githubusercontent.com/m4dm0e/Door404/master/Files/includes/version.txt";
 $GitHub = @file_get_contents("$GitHub");
 $VerFile = @file_get_contents("Files/includes/version.txt");
 if($VerFile == $GitHub){
